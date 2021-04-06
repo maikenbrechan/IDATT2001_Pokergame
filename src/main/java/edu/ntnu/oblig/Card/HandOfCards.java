@@ -1,7 +1,10 @@
 package edu.ntnu.oblig.Card;
 
 import java.util.ArrayList;
-    public class HandOfCards {
+import java.util.Collections;
+import java.util.stream.Collectors;
+
+public class HandOfCards {
         private int points = 0;
         private int amountOfCards=0;
         ArrayList<PlayingCard> cards = new ArrayList<>();
@@ -16,19 +19,11 @@ import java.util.ArrayList;
             cards= deck.dealHand(numberOfCards);
         }
 
-        /**
-         * Return amount of cards of one suit
-         * @param suit
-         * @return sum
-         */
-        public int amountOfSuit(char suit){
-            int sum=0;
-            for(PlayingCard card:cards){
-                if(card.getSuit()==suit){
-                    sum++;
-                }
+        public boolean flush(char a){
+            if(cards.stream().filter(p->p.getSuit()==a).count()>=5){
+                return true;
             }
-            return sum;
+            return false;
         }
 
         /**
@@ -38,15 +33,10 @@ import java.util.ArrayList;
 
         public Boolean checkForFlush(){
             for(char b:DeckOfCards.getSuits()){
-                if (amountOfSuit(b) == 5) {
-                    points=5;
+                if (flush(b)) {
                     return true;
                 }
             }
             return false;
-        }
-
-        public boolean flush(char a){
-            return true;
         }
     }

@@ -11,8 +11,7 @@ public class DeckOfCards {
     public DeckOfCards(){
         for(char suit: suits){
             for(int j=1; j<14; j++){
-                PlayingCard playingCard = new PlayingCard(suit, j);
-                deck.add(playingCard);
+                deck.add(new PlayingCard(suit, j));
             }
         }
     }
