@@ -19,7 +19,7 @@ public class DeckOfCards {
     public static char[] getSuits(){return suits;}
 
     public ArrayList<PlayingCard> dealHand(int n){
-        ArrayList<PlayingCard> hand= new ArrayList<>(n);
+        ArrayList<PlayingCard> hand = new ArrayList<>(n);
         for(int i=0; i<n; i++){
             int randomNumber = random.nextInt(deck.size());
             hand.add(deck.get(randomNumber));
