@@ -7,8 +7,7 @@ import java.util.Collections;
 import java.util.stream.Collectors;
 
 public class HandOfCards {
-        private int points = 0;
-        ArrayList<PlayingCard> cards = new ArrayList<>();
+        ArrayList<PlayingCard> cards;
 
         /**
          * Constructor
@@ -16,11 +15,16 @@ public class HandOfCards {
          * @param deck
          */
         public HandOfCards(int numberOfCards, DeckOfCards deck){
-            cards= deck.dealHand(numberOfCards);
+            cards = deck.dealHand(numberOfCards);
         }
 
         public ArrayList<PlayingCard> getCards(){return cards;}
 
+        /**
+         * Method that supports checkForFlush()
+         * @param a
+         * @return boolean
+         */
         public boolean flush(char a){
             if(cards.stream().filter(p->p.getSuit()==a).count()>=5){
                 return true;
@@ -52,10 +56,26 @@ public class HandOfCards {
             return heart;
         }
 
-        public boolean checkForS12(){
+    /**
+     * Method that
+     * @return true if hand contains S12
+     */
+    public boolean checkForS12(){
             if(cards.stream().anyMatch(s->s.getSuit()=='S'&& s.getFace()==12)){
                 return true;
             }
             return false;
         }
+
+    /**
+     * Standard toString()
+     * @return String
+     */
+    @Override
+    public String toString(){
+        for(PlayingCard c : cards){
+            return c.getAsString() +" ";
+        }
+        return null;
+    }
 }

@@ -1,6 +1,0 @@
-module-info.class
-edu\ntnu\oblig\App.class
-edu\ntnu\oblig\Card\DeckOfCards.class
-edu\ntnu\oblig\Card\HandOfCards.class
-edu\ntnu\oblig\PrimaryController.class
-edu\ntnu\oblig\Card\PlayingCard.class

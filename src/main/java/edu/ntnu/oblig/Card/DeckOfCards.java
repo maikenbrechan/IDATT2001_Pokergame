@@ -15,7 +15,6 @@ public class DeckOfCards {
             }
         }
     }
-
     public static char[] getSuits(){return suits;}
 
     public ArrayList<PlayingCard> dealHand(int n){

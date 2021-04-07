@@ -4,7 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -33,24 +33,20 @@
                         <Font name="Maiandra GD" size="14.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" text="Count Points" GridPane.rowIndex="2" />
-                  <Button mnemonicParsing="false" text="Check for flush" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#countPoints" text="Count Points" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#flush" text="Check for flush" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#s12" text="Queen of Spades?" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
             </GridPane>
-            <Label fx:id="label" layoutX="26.0" layoutY="40.0" style="-fx-background-color: LIGHTBLUE;" text="Cardgame">
+            <Label fx:id="label" layoutX="26.0" layoutY="40.0" text="Cardgame">
                <font>
                   <Font name="Times New Roman Bold" size="24.0" />
                </font>
                <effect>
-                  <Glow />
+                  <Blend />
                </effect>
             </Label>
-            <TextField fx:id="text" layoutX="123.0" layoutY="81.0" />
-            <Label fx:id="points" layoutX="60.0" layoutY="78.0" prefHeight="26.0" prefWidth="68.0" text="Points:">
-               <font>
-                  <Font name="Times New Roman Bold" size="16.0" />
-               </font>
-            </Label>
+            <TextField fx:id="text" layoutX="25.0" layoutY="79.0" prefHeight="28.0" prefWidth="250.0" />
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
          <children>
