@@ -9,7 +9,6 @@ import edu.ntnu.oblig.Card.DeckOfCards;
 import edu.ntnu.oblig.Card.HandOfCards;
 import edu.ntnu.oblig.Card.PlayingCard;
 import javafx.fxml.FXML;
-import javafx.scene.CacheHint;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -38,6 +37,10 @@ public class PrimaryController {
             images.add(i5);
             showCards();
             System.out.println(hand.toString());
+        }
+
+        public void outOfCards(){
+
         }
 
         public void showCards () throws FileNotFoundException {

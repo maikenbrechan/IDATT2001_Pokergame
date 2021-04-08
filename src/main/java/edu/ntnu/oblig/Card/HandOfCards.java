@@ -1,9 +1,6 @@
 package edu.ntnu.oblig.Card;
 
-import javafx.print.PageLayout;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.stream.Collectors;
 
 public class HandOfCards {
@@ -47,7 +44,7 @@ public class HandOfCards {
         }
 
         public int checkHand(){
-             return cards.stream().map(PlayingCard::getFace).reduce((a,b) -> (a + b)).get();
+             return cards.stream().map(PlayingCard::getFace).reduce(Integer::sum).get();
         }
 
         public ArrayList<PlayingCard> hearts(){
@@ -58,7 +55,7 @@ public class HandOfCards {
 
     /**
      * Method that
-     * @return true if hand contains S12
+     * @return true if hand contains Queen of Spades
      */
     public boolean checkForS12(){
             if(cards.stream().anyMatch(s->s.getSuit()=='S'&& s.getFace()==12)){
