@@ -43,7 +43,11 @@ public class HandOfCards {
             return false;
         }
 
-        public int checkHand(){
+    /**
+     * Method that calculates points
+     * @return sum of points on hand
+     */
+    public int sumPoints(){
              return cards.stream().map(PlayingCard::getFace).reduce(Integer::sum).get();
         }
 

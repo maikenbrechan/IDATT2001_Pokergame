@@ -1,0 +1,4 @@
+--patch-module
+edu.ntnu.oblig=_
+--add-reads
+edu.ntnu.oblig=ALL-UNNAMED

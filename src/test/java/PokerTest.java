@@ -1,5 +1,4 @@
-import edu.ntnu.oblig.Card.DeckOfCards;
-import edu.ntnu.oblig.Card.HandOfCards;
+import edu.ntnu.oblig.Card.*;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +15,7 @@ hand1 = new HandOfCards(5, deck1);
 }
 
 @Test
-void fiveCards(){
+void fiveCardsOnHand(){
 assertEquals(5, hand1.getCards().size());
 }
 }

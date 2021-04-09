@@ -31,7 +31,6 @@
       <change afterPath="$PROJECT_DIR$/../JavaFX-Load-and-Save-ToDo-Items-from-to-Disk-Source-code/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Oblig2/.idea/Oblig2.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Oving10/.idea/Oving10.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PokerTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Practice/src/Album.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Practice/src/Tracks.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SisteOving/SisteOving.iml" afterDir="false" />
@@ -51,12 +50,13 @@
       <change afterPath="$PROJECT_DIR$/../oving2/src/main/java/ntnu/idatt2001/MemberArchiveClient.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../oving2/src/main/java/ntnu/idatt2001/Membership.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../oving2/src/main/java/ntnu/idatt2001/SilverMembership.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/oblig/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/oblig/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/oblig/Card/DeckOfCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/oblig/Card/DeckOfCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/oblig/Card/HandOfCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/oblig/Card/HandOfCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntnu/oblig/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntnu/oblig/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PokerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PokerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PokerGame-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hospital" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -105,8 +105,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
-  <component name="RunManager" selected="JAR Application.PokerGame-1.0-SNAPSHOT.jar">
+  <component name="RunManager" selected="JUnit.PokerTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.ntnu.oblig.App" />
       <module name="PokerGame" />
@@ -120,15 +121,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PokerGame" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PokerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,9 +175,11 @@
       <item itemvalue="Application.App" />
       <item itemvalue="JAR Application.PokerGame-1.0-SNAPSHOT.jar" />
       <item itemvalue="Maven.PokerGame [clean,install]" />
+      <item itemvalue="JUnit.PokerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PokerTest" />
         <item itemvalue="JAR Application.PokerGame-1.0-SNAPSHOT.jar" />
         <item itemvalue="Application.App" />
       </list>
@@ -184,7 +194,8 @@
       <option name="presentableId" value="Default" />
       <updated>1617615183676</updated>
       <workItem from="1617615184797" duration="25488000" />
-      <workItem from="1617884247043" duration="4358000" />
+      <workItem from="1617884247043" duration="4569000" />
+      <workItem from="1617958594724" duration="1124000" />
     </task>
     <servers />
   </component>
@@ -216,30 +227,34 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="417" y="131" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1617820358795" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1617892592134">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1617912586536">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1617892592134" />
-    <state width="1237" height="281" key="GridCell.Tab.0.bottom" timestamp="1617890584322">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1617912586536" />
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1617959385417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="281" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617890584322" />
-    <state width="1237" height="281" key="GridCell.Tab.0.center" timestamp="1617890584322">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617959385417" />
+    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1617959385416">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="281" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1617890584322" />
-    <state width="1237" height="281" key="GridCell.Tab.0.left" timestamp="1617890584322">
+    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1617959385416" />
+    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1617959385416">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="281" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1617890584322" />
-    <state width="1237" height="281" key="GridCell.Tab.0.right" timestamp="1617890584322">
+    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1617959385416" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1617959385416">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="281" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617890584322" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617959385416" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1617821092691">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1617821092691" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1617958924955">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1617958924955" />
     <state x="91" y="0" key="new project wizard" timestamp="1617707588506">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

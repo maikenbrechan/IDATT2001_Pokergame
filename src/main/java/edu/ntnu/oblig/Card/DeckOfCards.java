@@ -8,6 +8,10 @@ public class DeckOfCards {
     private static final char[] suits = {'H','C','S','D'};
     private Random random = new Random();
 
+    /**
+     * Constructor creates 52 cards
+     */
+
     public DeckOfCards(){
         for(char suit: suits){
             for(int j=1; j<14; j++){
@@ -15,8 +19,17 @@ public class DeckOfCards {
             }
         }
     }
+
+    /**
+     * Only get method for suits
+     */
     public static char[] getSuits(){return suits;}
 
+    /**
+     * Deal hand method in task 3
+     * @param n
+     * @return ArrayList<PlayingCard>
+     */
     public ArrayList<PlayingCard> dealHand(int n){
         ArrayList<PlayingCard> hand = new ArrayList<>(n);
         for(int i=0; i<n; i++){
