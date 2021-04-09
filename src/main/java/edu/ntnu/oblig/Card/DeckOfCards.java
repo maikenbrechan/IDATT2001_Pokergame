@@ -24,6 +24,7 @@ public class DeckOfCards {
      * Only get method for suits
      */
     public static char[] getSuits(){return suits;}
+    public ArrayList<PlayingCard> getDeck(){return deck;}
 
     /**
      * Deal hand method in task 3
